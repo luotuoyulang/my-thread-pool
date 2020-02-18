@@ -11,7 +11,7 @@ public class TestThreadService {
     public String test() throws InterruptedException {
         while (true){
             Thread.sleep(1000);
-            System.out.println("你好啊。。。。。。");
+            System.out.println("你好啊。。。。。。" + Thread.currentThread().getName());
         }
     }
 }
